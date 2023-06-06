@@ -11,7 +11,9 @@ import { store } from './store'
 
 
 const MockStore = configureStore({
-    reducer: reducer
+    reducer: {
+        counter: reducer
+    }
 })
 
 type Counter = {
