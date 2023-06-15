@@ -9,6 +9,7 @@ import { increment, decrement } from './CounterSlice'
 
     return (
         <>
+            <p>good moringn</p>
             <p>{count}</p>
             <button onClick={() => dispach(increment())}>increment</button>
             <button onClick={() => dispach(decrement())}>decrement</button>

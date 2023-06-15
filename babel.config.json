@@ -1,0 +1,7 @@
+// babel.config.json
+{
+  "presets": [
+    ["react-app", { "runtime": "automatic" }],
+    "babel-preset-vite"
+  ]
+}

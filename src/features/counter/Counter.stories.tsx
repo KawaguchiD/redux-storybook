@@ -1,25 +1,18 @@
 // Button.stories.ts|tsx
 
-import type { Meta, StoryObj, storiesOf } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import Counter from './counter';
 import reducer from './CounterSlice'
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import React from 'react';
-import { store } from './store'
-
 
 const MockStore = configureStore({
     reducer: {
         counter: reducer
     }
 })
-
-type Counter = {
-    value: number,
-    getState: () => void,
-}
 
 // const createMock: React.FC<Counter> = (state) => {
 //     return {
